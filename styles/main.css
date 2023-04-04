@@ -35,7 +35,6 @@ body {
   height: 100%;
   font-family: "Poppins", sans-serif;
   color: #333;
-
 }
 
 img,
@@ -105,7 +104,7 @@ h4 {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-body{
+body {
   font-family: "Poppins", sans-serif;
   color: #333;
   display: flex;
@@ -168,14 +167,14 @@ body {
 }
 article,
 aside {
-margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
-aside{
+aside {
   padding: 0 1rem;
 }
 
-img { 
+img {
   width: 100%;
   display: block;
 }
@@ -194,7 +193,7 @@ img {
 }
 .hero h1 {
   position: absolute;
-  inset: 0 ;
+  inset: 0;
   font-size: clamp(1.5rem, 10vw + 1rem, 10rem);
 }
 
@@ -210,12 +209,10 @@ img {
 
 .card:hover {
   text-decoration: none;
-
 }
 
 footer {
-   
-    background-color:  #98c1d9;
+  background-color: #98c1d9;
 }
 
 /* footer p {
@@ -235,7 +232,6 @@ footer {
   text-align: center;
   transition: box-shadow 500ms cubic-bezier(0.39, 0.5, 0.15, 1.36),
     color 500ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-
 }
 
 .button svg {
@@ -273,7 +269,6 @@ a[href]:hover {
   object-fit: cover;
 }
 
-
 .hero .text-wrapper {
   display: flex;
   flex-direction: column;
@@ -294,8 +289,8 @@ a[href]:hover {
   font-size: clamp(5rem, 12vw + 1rem, 12rem);
   font-weight: 600;
   text-shadow: 1px 1px 2px #000;
-  margin: 0; 
-  padding:0; 
+  margin: 0;
+  padding: 0;
 }
 
 .hero p {
@@ -305,6 +300,35 @@ a[href]:hover {
 /***** Menu *****/
 header {
   margin-bottom: var(--gap);
+}
+
+nav {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-primary);
+  visibility: hidden;
+  
+}
+.close nav {
+  position: fixed;
+  display: flex;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+}
+.close nav ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 80rem;
+}
+.close nav a{
+display: block;
+color: #fff;
+
 }
 
 header nav ul {
@@ -358,7 +382,7 @@ header nav a[href]:hover::after {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #711f21;
+  background-color: #517ea6;
   z-index: 2;
 }
 
@@ -432,7 +456,6 @@ header nav a[href]:hover::after {
     flex: 1 1 45%;
   }
 }
-
 
 @media (min-width: 900px) {
   .cards {
