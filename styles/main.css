@@ -298,7 +298,7 @@ a[href]:hover {
 header {
   margin-bottom: var(--gap);
 }
-/* 
+
 nav {
   position: fixed;
   inset: 0;
@@ -310,17 +310,21 @@ nav {
   position: fixed;
   display: flex;
   visibility: visible;
-  align-items: center;
+  align-items: flex-start;
+  padding-bottom: 15rem;
   justify-content: center;
   inset: 0;
+  z-index: 1;
 }
 .close nav ul{
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: 0 auto;
   padding: 0;
   max-width: 80rem;
+  align-items: center;
+  padding-top: 4rem;
+  
 }
 .close nav a{
 display: block;
@@ -334,15 +338,15 @@ header nav ul {
   margin: 0;
   list-style-type: none;
   justify-content: space-around;
-} */
+}
 
-header nav ul {
+/* header nav ul {
   display: flex;
  flex-direction: row;
  text-decoration: none;
  list-style-type: none;
  justify-content: space-between;
-}
+} */
 header nav a {
   position: relative;
   font-size: 1.5rem;
@@ -407,9 +411,6 @@ header nav a[href]:hover::after {
 }
 
 /* JavaScript toggles a "close" class on the <nav> when the menu-icon is clicked */
-.close nav {
-  display: block;
-}
 
 .close line:first-child {
   transform: rotate(135deg);
@@ -456,6 +457,17 @@ header nav a[href]:hover::after {
     flex-wrap: wrap;
   }
 
+  nav{
+    position: static;
+    visibility: visible;
+    background-color: transparent;
+
+  }
+  .menu-icon{
+    display: none;
+  }
+  .hero {}
+
   .card {
     flex: 1 1 45%;
   }
@@ -466,3 +478,4 @@ header nav a[href]:hover::after {
     flex-wrap: nowrap;
   }
 }
+
