@@ -479,3 +479,38 @@ header nav a[href]:hover::after {
   }
 }
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.video-background {
+  background: #000;
+  position: absolute;
+  inset: 0;
+  z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
