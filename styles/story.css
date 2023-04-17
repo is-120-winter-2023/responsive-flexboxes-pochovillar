@@ -199,3 +199,6 @@ section {
 .button:hover a{
   color:#fff
 }
+.chopo{
+  text-shadow: 2px 2px 2px #0006;
+}
