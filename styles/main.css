@@ -462,7 +462,6 @@ header nav a[href]:hover::after {
   .menu-icon {
     display: none;
   }
-  
 
   .card {
     flex: 1 1 45%;
